@@ -1,13 +1,19 @@
 // js/script.js
 
-function loadComponent(id, file) {
-    fetch(`../Component/${file}`) // Corrected path to look inside 'components' folder
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById(id).innerHTML = data;
-    })
-    .catch(error => console.error(`Error loading ${file}:`, error));
-}
+const nav = document.querySelector('.test_nav')
+fetch('navbar.html')
+.then(res=>res.text())
+.then(data=>{
+    nav.innerHTML=data
+})
+
+const footer = document.querySelector('.end')
+fetch('footer.html')
+.then(res=>res.text())
+.then(data=>{
+    footer.innerHTML=data
+})
+
 
 document.addEventListener('contextmenu', function (event) {
     event.preventDefault(); // Disable right-click menu

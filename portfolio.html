@@ -13,12 +13,16 @@
   <link rel="icon" href="Assets/coad-&-coach-light-logo.png" type="image/x-icon">
 </head>
 
-<body onload="loadComponent('navbar', 'navbar.html'); loadComponent('footer', 'footer.html');">
+<body>
   <div class="container-fluid p-0">
 
     <div class="container-fluid cust-container p-0">
 
-      <div id="navbar"></div> <!-- Navbar will load here -->
+      <!-- navbar section start  -->
+
+      <nav class="test_nav "></nav>
+
+      <!-- navbar section ends  -->
     </div>
 
     <div class="container-fluid" style="width: 100%;
@@ -26,53 +30,56 @@
     background-size: cover;
     background-image: url('Assets/home-bg-2.png');">
 
-    <h1 class="text-white text-center pt-5 display-1"> Our Portfolio</h1>
+      <h1 class="text-white text-center pt-5 display-1"> Our Portfolio</h1>
     </div>
 
     <div class="container">
       <!-- ------------------Portfolio------------------ -->
-    <div id="portfolio" class="row portfolio-head"> 
-    </div>
-    <div class="row work-list text-white">
-      <div class="work col-sm-12 col-lg-4 mt-3">
-        <img src="img/work-1.png" alt="">
-        <div class="layer">
-          <h3>Keshav Industries - E_Commerce Website <br> Front-End Developer</h3>
-          <p>Built a responsive e-commerce site using React, with HTML, CSS, and JavaScript for the front-end.</p>
-          <a href="https://www.keshav.co.in/" target="blank"><i class="bi bi-box-arrow-up-right"></i></a>
-        </div>
+      <div id="portfolio" class="row portfolio-head">
       </div>
-      <div class="work col-sm-12 col-lg-4 mt-3">
-        <img src="img/work-2.png" alt="">
-        <div class="layer">
-          <h3>hello! DEWAS ® - <br> Web Developer</h3>
-          <p>Developed and customized a responsive WordPress website, tailoring themes and plugins to meet project requirements</p>
-          <a href="https://hellodewas.com/" target="blank"><i class="bi bi-box-arrow-up-right"></i></a>
+      <div class="row work-list text-white">
+        <div class="work col-sm-12 col-lg-4 mt-3">
+          <img src="img/work-1.png" alt="">
+          <div class="layer">
+            <h3>Keshav Industries - E_Commerce Website <br> Front-End Developer</h3>
+            <p>Built a responsive e-commerce site using React, with HTML, CSS, and JavaScript for the front-end.</p>
+            <a href="https://www.keshav.co.in/" target="blank"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="work col-sm-12 col-lg-4 mt-3">
-        <img src="img/work-3.png" alt="">
-        <div class="layer">
-          <h3>Online OTP Attendance System - Full Stack Developer</h3>
-          <p>Developed a secure Online OTP Attendance System with a front-end using HTML, CSS, and JavaScript,
-            and a back-end powered by Java Servlets, JSP, and MySQL. Implemented OTP-based authentication to
-            enhance security, while optimizing MySQL database schemas for efficient data storage and improved
-            system performance.
+        <div class="work col-sm-12 col-lg-4 mt-3">
+          <img src="img/work-2.png" alt="">
+          <div class="layer">
+            <h3>hello! DEWAS ® - <br> Web Developer</h3>
+            <p>Developed and customized a responsive WordPress website, tailoring themes and plugins to meet project
+              requirements</p>
+            <a href="https://hellodewas.com/" target="blank"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="work col-sm-12 col-lg-4 mt-3">
+          <img src="img/work-3.png" alt="">
+          <div class="layer">
+            <h3>Online OTP Attendance System - Full Stack Developer</h3>
+            <p>Developed a secure Online OTP Attendance System with a front-end using HTML, CSS, and JavaScript,
+              and a back-end powered by Java Servlets, JSP, and MySQL. Implemented OTP-based authentication to
+              enhance security, while optimizing MySQL database schemas for efficient data storage and improved
+              system performance.
             </p>
-          <a href="#" target="blank"><i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="#" target="blank"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="text-center">
-      <button class="hero-btn">
-                <a href="#" class="hero-btn-a"><span>View More</span></a> 
-            </button>
-    </div>
+      <div class="text-center">
+        <button class="hero-btn">
+          <a href="#" class="hero-btn-a"><span>View More</span></a>
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="container-fluid p-0">
-    <div id="footer"></div> <!-- Footer will load here -->
+    <!-- footer section start  -->
+    <div class="end"></div>
+    <!-- footer section end  -->
   </div>
 
   <script src="js/script.js"></script> <!-- Ensure script.js is in /js/ -->
