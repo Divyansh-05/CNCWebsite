@@ -6,6 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: 1s;
+    font-family: 'Poppins';
 }
 body{
   background: rgb(0, 0, 0);
@@ -72,12 +73,20 @@ background: linear-gradient(90deg, rgb(0, 0, 0) 26%, rgba(1,1,2,1) 78%);
   margin-top: 3%;
   margin-bottom: 1%;
 }
-  
+
+.types-sec-h6{
+  color: #c1c1c1;
+}  
   
   @media only screen   
   and (min-device-width : 320px)   
   and (max-device-width : 640px)  
   { 
+
+    .hero-h1{
+      font-size: 2.5rem;
+      padding-top: 30%;
+    }
     /* ------------------Portfolio------------------ */
     #portfolio{
       margin-top: 2rem;
@@ -155,6 +164,11 @@ background: linear-gradient(90deg, rgb(0, 0, 0) 26%, rgba(1,1,2,1) 78%);
   and (min-width: 1030px)   
   and (max-width: 1605px)  
   { 
+
+    .hero-h1{
+      font-size: 5.5rem;
+      padding-top: 10%;
+    }
     /* ------------------Portfolio------------------ */
 #portfolio{
   margin-top: 5rem;

@@ -13,32 +13,6 @@ body{
 background: linear-gradient(90deg, rgb(0, 0, 0) 26%, rgba(1,1,2,1) 78%);
 }
 
-
-
-
-
-
-@media only screen   
-and (min-device-width : 320px)   
-and (max-device-width : 640px)  
-{
-    .hero-h1{
-        font-weight:400;
-        font-size: 2rem;
-        margin-top: 20%;
-        margin-bottom: 1.5%;
-    }
-    .hero-h3{
-        font-weight:400;
-        font-size: 2rem;
-        margin-top: 15%;
-        margin-bottom: 1%;
-    }
-    
- }
-
-
-
  form{
     background-color:#000000 ;
   }
@@ -73,7 +47,7 @@ and (max-device-width : 640px)
   }
   
   button[type="submit"] {
-    background-color: #04AA6D;
+    background-color: #9c9898;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -81,6 +55,59 @@ and (max-device-width : 640px)
     cursor: pointer;
   }
 
+  @media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  {
+      .hero-h1{
+          font-weight:400;
+          font-size: 2rem;
+          margin-top: 20%;
+          margin-bottom: 1.5%;
+      }
+      .hero-h3{
+          font-weight:400;
+          font-size: 1rem;
+          margin-top: 15%;
+          color: #b1b1b1;
+          margin-bottom: 1%;
+      }
+      .sec-5-col-2{
+        height: 100vh;
+        background-image: url('../Assets/sec-4-bg.png');
+        border: 1px solid white;
+    }
+    .sec-5-col-2{
+        height: 100vh;
+        border: 1px solid white;
+    }
+    .sec-5-col-2 h1{
+      margin-top: 30%;
+      padding-top: 2%;
+  }
+    .sec-5-col-2 h3{
+        margin-top: 1%;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        padding-top: 2%;
+    }
+    
+    .sec-5-col-1{
+        border: 1px solid white;
+    }
+    
+    .sec-5-col-1 h2 {
+        margin-top: 40%;
+        margin-bottom: 4%;
+        line-height: 2.5rem;
+    }
+    .sec-5-col-1 p {
+        margin-bottom: 4%;
+        line-height: 1.75rem;
+        color: #737376;
+    }
+      
+   }
 
 
 @media only screen   
@@ -96,9 +123,44 @@ and (max-width: 1605px)
     }
     .hero-h3{
         font-weight:400;
-        font-size: 2rem;
+        color: #b1b1b1;
+        font-size: 1.2rem;
         margin-top: 1%;
         padding-left: 5%;
         margin-bottom: 1%;
     }
+    .sec-5-col-2{
+      height: 100vh;
+      background-image: url('../Assets/sec-4-bg.png');
+      border: 1px solid white;
+  }
+  .sec-5-col-2{
+      height: 100vh;
+      border: 1px solid white;
+  }
+  .sec-5-col-2 h1{
+    margin-top: 30%;
+    padding-top: 2%;
+}
+  .sec-5-col-2 h3{
+      margin-top: 1%;
+      font-weight: lighter;
+      font-size: 1.2rem;
+      padding-top: 2%;
+  }
+  
+  .sec-5-col-1{
+      border: 1px solid white;
+  }
+  
+  .sec-5-col-1 h2 {
+      margin-top: 40%;
+      margin-bottom: 4%;
+      line-height: 2.5rem;
+  }
+  .sec-5-col-1 p {
+      margin-bottom: 4%;
+      line-height: 1.75rem;
+      color: #737376;
+  }
 }

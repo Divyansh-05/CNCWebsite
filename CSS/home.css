@@ -13,6 +13,11 @@ body{
 background: linear-gradient(90deg, rgb(0, 0, 0) 26%, rgba(1,1,2,1) 78%);
 }
 
+#msg{
+    color: #ffffff;
+    display: block;
+}
+
 /* hero btn */
 
 .hero-btn-a {
@@ -109,6 +114,45 @@ background: linear-gradient(90deg, rgb(0, 0, 0) 26%, rgba(1,1,2,1) 78%);
     border-radius: 2px;
 }
 
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 5%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #9c9898;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
 
 
 
@@ -148,6 +192,9 @@ and (max-device-width : 640px)
         max-width: 100%; /* Full width on small screens */
         width: 80%;
         padding: 20px;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .custom-card{
@@ -155,11 +202,19 @@ and (max-device-width : 640px)
     }
     
     /* Icon Styling */
-.icon-container {
-    font-size: 40px;
-    color: #00aaff; /* Blue Icon */
-    margin-bottom: 10px;
-}
+    .icon-container-1 {
+        margin-bottom: 10px;
+        margin-top: 15%;
+    }
+    .icon-container-1 > img{
+        width: 35%;
+        height: 20%;
+    }
+    .icon-container > img{
+        width: 30%;
+        height: 250%;
+        margin-bottom: 10%;
+    }
 
 /* Title Styling */
 .card-title {
@@ -241,16 +296,16 @@ and (max-width: 1605px)
         margin-bottom: 1%;
     }
     .sec-1-col-1{
-        height: 100vh;
+        height: 110vh;
         background-image: url('../Assets/sec-2-bg-2.png');
         border: 1px solid white;
     }
     .sec-1-col-2{
-        height: 100vh;
+        height: 110vh;
         border: 1px solid white;
     }
     .sec-1-col-1 h2 {
-        margin-top: 40%;
+        margin-top: 4%;
         margin-bottom: 4%;
         line-height: 2.5rem;
     }
@@ -269,16 +324,25 @@ and (max-width: 1605px)
         width: 100%;
         max-width: 18rem;
         margin: auto;
+        margin-top: 5%;
     }
     .custom-card:hover{
         background-color: transparent;
         border: 1px solid white;
     }
     /* Icon Styling */
-.icon-container {
-    font-size: 40px;
-    color: #00aaff; /* Blue Icon */
+.icon-container-1 {
     margin-bottom: 10px;
+    margin-top: 25%;
+}
+.icon-container-1 > img{
+    width: 35%;
+    height: 20%;
+}
+.icon-container > img{
+    width: 30%;
+    height: 250%;
+    margin-bottom: 10%;
 }
 
 /* Title Styling */
@@ -321,11 +385,11 @@ background-repeat: no-repeat;
 .sec-4-h1-2{
     font-weight:300;
     font-size: 1.25rem;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-bottom: 5%;
 }
 
-.sec-5-col-1{
+.sec-5-col-2{
     height: 100vh;
     background-image: url('../Assets/sec-4-bg.png');
     border: 1px solid white;
@@ -338,11 +402,11 @@ background-repeat: no-repeat;
     margin-top: 10%;
     font-weight: lighter;
     font-size: 1.25rem;
-    padding-left: 15%;
-    padding-right: 25%;
+    padding-top: 25%;
 }
-.sec-5-btn{
-    padding-left: 50%;
+
+.sec-5-col-1{
+    border: 1px solid white;
 }
 
 .sec-5-col-1 h2 {

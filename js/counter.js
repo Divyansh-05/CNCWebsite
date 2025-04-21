@@ -1,31 +1,37 @@
-function startCounter() {
-    const counters = document.querySelectorAll('.counter-number');
-    counters.forEach(counter => {
-        counter.innerText = '0';
-        const updateCounter = () => {
+document.addEventListener('DOMContentLoaded', () => {
+    function startCounter() {
+        const counters = document.querySelectorAll('.counter-number');
+        counters.forEach(counter => {
+            counter.innerText = '0+';
             const target = +counter.getAttribute('data-target');
-            const current = +counter.innerText;
-            const increment = target / 100; // Adjust speed
             
-            if (current < target) {
-                counter.innerText = Math.ceil(current + increment);
-                setTimeout(updateCounter, 50); // Smooth animation
-            } else {
-                counter.innerText = target;
+            const updateCounter = () => {
+                const current = parseInt(counter.innerText.replace('+', ''));
+                const increment = target / 100;
+
+                if (current < target) {
+                    counter.innerText = `${Math.ceil(current + increment)}+`;
+                    setTimeout(updateCounter, 50);
+                } else {
+                    counter.innerText = `${target}+`;
+                }
+            };
+            updateCounter();
+        });
+    }
+
+    // Observe when .counter-section is in view
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounter();
+                observer.disconnect(); // Only once
             }
-        };
-        updateCounter();
+        });
     });
-}
 
-// Start Counter when the section is visible
-let observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            startCounter();
-            observer.disconnect(); // Run only once
-        }
-    });
+    const counterSection = document.querySelector('.counter-section');
+    if (counterSection) {
+        observer.observe(counterSection);
+    }
 });
-
-observer.observe(document.querySelector('.counter-section'));
